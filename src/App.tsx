@@ -9,7 +9,8 @@ import Auth from './pages/Auth';
 import Profile from './pages/Profile';
 import Admin from './pages/Admin';
 export function App() {
-  return <BrowserRouter>
+  return (
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
@@ -21,5 +22,6 @@ export function App() {
           <Route path="admin" element={<Admin />} />
         </Route>
       </Routes>
-    </BrowserRouter>;
+    </BrowserRouter>
+  );
 }

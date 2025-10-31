@@ -1,7 +1,8 @@
 import React from 'react';
 import ChatInterface from '../components/chat/ChatInterface';
 const Home = () => {
-  return <div className="flex flex-col h-[calc(100vh-140px)]">
+  return (
+    <div className="flex flex-col h-[calc(100vh-140px)]">
       <div className="text-center mb-4">
         <h1 className="text-3xl font-bold text-gray-800">VietChoice</h1>
         <p className="text-gray-600 mt-2">
@@ -9,6 +10,7 @@ const Home = () => {
         </p>
       </div>
       <ChatInterface />
-    </div>;
+    </div>
+  );
 };
 export default Home;
